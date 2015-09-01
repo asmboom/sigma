@@ -1,5 +1,16 @@
-
+#' An htmlwidget wrapper for the sigmajs graph visualization library.
+#' 
+#' @param gexf GEXF (Graph Exchange XML Format) data file.
+#' @param drawEdges logical, whether or not to draw the edges
+#' @param drawNodes logical, whether or not to draw the nodes
+#' @param width the width of the graph in pixels
+#' @param height the height of the graph in pixels
 #' @import htmlwidgets
+#' 
+#' @source sigmajs was developed by  ALEXIS JACOMY with the help of  GUILLAUME PLIQUE. See \url{http://sigmajs.org/} 
+#' @examples 
+#' data <- system.file("examples/ediaspora.gexf.xml", package = "sigma")
+#' sigma(data)
 #' @export
 sigma <- function(gexf, drawEdges = TRUE, drawNodes = TRUE,
                   width = NULL, height = NULL) {
