@@ -4,14 +4,14 @@
 
 An R package with an interface to the [sigma.js](http://sigmajs.org) graph visualization library.
 
-This package is intended as a simple demonstration of building R bindings to JavaScript libraries using the [htmlwidgets](https://github.com/ramnathv/htmlwidgets) framework. 
+This package is my first attempt at developing simple R bindings to JavaScript libraries using the [htmlwidgets](https://github.com/ramnathv/htmlwidgets) framework. All credit is passed to the developers of this great package
 
 #### Installation
 
 You can install the **sigma** package from GitHub as follows:
 
 ```r
-devtools::install_github("jjallaire/sigma")
+devtools::install_github("paulgovan/sigma")
 ```
 
 #### Usage
