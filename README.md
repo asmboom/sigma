@@ -4,7 +4,7 @@
 
 An R package with an interface to the [sigma.js](http://sigmajs.org) graph visualization library.
 
-This package is my first attempt at developing simple [htmlwidgets](https://github.com/ramnathv/htmlwidgets) framework. All credit is given to the authors of this great package
+This package is my first attempt at developing simple R bindings to JavaScript libraries using the [htmlwidgets](https://github.com/ramnathv/htmlwidgets). All credit is passed to the developers of this great package.
 
 #### Installation
 
