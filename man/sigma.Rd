@@ -7,19 +7,22 @@
 sigmajs was developed by  ALEXIS JACOMY with the help of  GUILLAUME PLIQUE. See \url{http://sigmajs.org/}
 }
 \usage{
-sigma(gexf, drawEdges = TRUE, drawNodes = TRUE, width = NULL,
-  height = NULL)
+sigma(gexf, drawEdges = TRUE, drawNodes = TRUE, node.type = "circle",
+  width = NULL, height = NULL)
 }
 \arguments{
 \item{gexf}{GEXF (Graph Exchange XML Format) data file.}
 
-\item{drawEdges}{logical, whether or not to draw the edges}
+\item{drawEdges}{logical, whether or not to draw the edges.}
 
-\item{drawNodes}{logical, whether or not to draw the nodes}
+\item{drawNodes}{logical, whether or not to draw the nodes.}
 
-\item{width}{the width of the graph in pixels}
+\item{node.type}{character string indicating the node shape. Options include
+\code{circle}, \code{square}, \code{diamond}, and \code{equilateral}.}
 
-\item{height}{the height of the graph in pixels}
+\item{width}{the width of the graph in pixels.}
+
+\item{height}{the height of the graph in pixels.}
 }
 \description{
 An htmlwidget wrapper for the sigmajs graph visualization library.
