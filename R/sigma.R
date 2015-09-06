@@ -3,8 +3,6 @@
 #' @param gexf GEXF (Graph Exchange XML Format) data file.
 #' @param drawEdges logical, whether or not to draw the edges.
 #' @param drawNodes logical, whether or not to draw the nodes.
-#' @param node.type character string indicating the node shape. Options include
-#' \code{circle}, \code{square}, \code{diamond}, and \code{equilateral}.
 #' @param width the width of the graph in pixels.
 #' @param height the height of the graph in pixels.
 #' @import htmlwidgets
@@ -14,7 +12,7 @@
 #' data <- system.file("examples/ediaspora.gexf.xml", package = "sigma")
 #' sigma(data)
 #' @export
-sigma <- function(gexf, drawEdges = TRUE, drawNodes = TRUE, node.type = "circle",
+sigma <- function(gexf, drawEdges = TRUE, drawNodes = TRUE,
                   width = NULL, height = NULL) {
   
   # read the gexf file
@@ -23,8 +21,7 @@ sigma <- function(gexf, drawEdges = TRUE, drawNodes = TRUE, node.type = "circle"
   # create a list that contains the settings
   settings <- list(
     drawEdges = drawEdges,
-    drawNodes = drawNodes,
-    node.type = node.type
+    drawNodes = drawNodes
   )
   
   # pass the data and settings using 'x'
